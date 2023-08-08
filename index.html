@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive internship Website</title>
+    <link rel="icon" href="document/123.png" type="image/icon type">
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Box Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    
+</head>
+
+<body>
+    <!-- Navbar -->
+        <div class="container">
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <div class="tabs">
+            <div class="main-logo">
+                <img class="logo" src="document/logo.gif" alt=" GIF">
+            </div>
+            <div class="main-nav">
+                <a href="#home" class="tab" onclick="moveGlider(6)">Home</a>
+                <a href="#about" class="tab" onclick="moveGlider(5)">About</a>
+                <a href="#skills" class="tab" onclick="moveGlider(4)">Skills</a>
+                <a href="#services" class="tab" onclick="moveGlider(3)">Services</a>
+                <a href="#internship" class="tab" onclick="moveGlider(2)">Internship</a>
+                <a href="#contact" class="tab" onclick="moveGlider(1)">Contact</a>
+                <div class="bx bx-moon dark" id="darkmode" onclick="mode()"></div>
+                <span class="glider"></span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function moveGlider(index) {
+            const glider = document.querySelector(".glider");
+            const tabWidth = -100;
+
+            glider.style.transform = `translateX(${index * tabWidth}px)`;
+        }
+    </script>
+    
+    <!-- Home -->
+
+    <section class="home" id="home">
+        <div class="home-img">
+            <img src="document/11.png" alt="">
+        </div>
+        <div class="home-text">
+            <span>Hello, I'm</span>
+            <h1>Parth Tandel</h1>
+            <h2>Web Developer</h2>
+            <p>I specialize in front-end development and <br> I hail from Navsari.</p>
+            <div class="social">
+                <div class="social-logo ">
+                    <a href="https://www.facebook.com/parth.tandel.5074" target="_blank"><i
+                            class='bx bxl-facebook'></i></a>
+                    <a href="https://twitter.com/TandelParth15" target="_blank"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://www.instagram.com/_parth_3579/" target="_blank"><i
+                            class='bx bxl-instagram'></i></a>
+                    <a href="https://github.com/tandel-parth" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://linkedin.com/in/tandel-parth" target="_blank"><i class="bx bxl-linkedin"></i></a>
+                </div>
+                <a href="#contact" class="btn">Contact Me</a>
+            </div>
+        </div>
+
+    </section>
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About Me</h2>
+            <span>Introduction</span>
+        </div>
+        <!-- About Content -->
+        <div class="about-container">
+            <div class="about-img">
+                <img src="document/121.jpg" alt="">
+            </div>
+            <div class="about-text">
+                <p>I'm a web developer with a passion for creating user-friendly and visually appealing websites. I
+                    specialize in front-end development and have experience in HTML, CSS, and JavaScript. I love turning
+                    complex ideas into elegant and functional designs that engage users. Let's connect and explore how I
+                    can contribute to your next project.</p>
+                <div class="information">
+                    <!-- Box 1 -->
+                    <div class="info-box">
+                        <i class='bx bxs-user'></i>
+                        <span>Parth Tandel</span>
+                    </div>
+                    <!-- Box 2 -->
+                    <div class="info-box">
+                        <i class='bx bxs-phone'></i>
+                        <span>+91 81414 58299</span>
+                    </div>
+                    <!-- Box 3 -->
+                    <div class="info-box">
+                        <i class='bx bxs-envelope'></i>
+                        <span>tandelp268@gmail.com</span>
+                    </div>
+                </div>
+                <button class="btn" id="downloadButton">Download CV</button>
+            </div>
+        </div>
+    </section>
+    <!-- Skills -->
+    <section class="skills" id="skills">
+        <div class="heading">
+            <h2>Skills</h2>
+            <span>My Skills</span>
+        </div>
+        <!-- Skills Content -->
+        <div class="skills-container">
+            <div class="bars">
+                <!-- Box 1 -->
+                <div class="bars-box">
+                    <h3>HTML</h3>
+                    <span>94%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar html-bar"></div>
+                </div>
+                <!-- Box 2 -->
+                <div class="bars-box">
+                    <h3>CSS</h3>
+                    <span>84%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar css-bar"></div>
+                </div>
+                <!-- Box 3 -->
+                <div class="bars-box">
+                    <h3>JavaScript</h3>
+                    <span>74%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar js-bar"></div>
+                </div>
+                <!-- Box 4 -->
+                <div class="bars-box">
+                    <h3>React</h3>
+                    <span>80%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar react-bar"></div>
+                </div>
+                <!-- Box 5 -->
+                <div class="bars-box">
+                    <h3>PHP</h3>
+                    <span>84%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar php-bar"></div>
+                </div>
+            </div>
+            <div class="skills-img">
+                <img src="document/123.png" alt="">
+            </div>
+        </div>
+
+    </section>
+    <!-- Services -->
+    <section class="services" id="services">
+        <div class="heading">
+            <h2>Services</h2>
+            <span>Our Services</span>
+        </div>
+        <div class="services-content">
+            <!-- Box 1 -->
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <a href="#">Learn More</a>
+            </div>
+            <!-- Box 2 -->
+            <div class="services-box">
+                <i class='bx bx-server'></i>
+                <h3>Backend Development</h3>
+                <a href="#">Learn More</a>
+            </div>
+            <!-- Box 3 -->
+            <div class="services-box">
+                <i class='bx bx-brush'></i>
+                <h3>UI/UX Design</h3>
+                <a href="#">Learn More</a>
+            </div>
+
+        </div>
+    </section>
+    <!-- internship -->
+    <section class="internship" id="internship">
+        <div class="heading">
+            <h2>Internship</h2>
+            <span>Our Recent Work</span>
+        </div>
+        <div class="internship-content">
+            <div class="internship-img">
+                <a href="document/ADIT-ALL-111-Parthkumar Pravinkumar Tandelpdf.pdf" target="_blank"><img
+                        src="document/blog-2.jpg" alt=""></a>
+            </div>
+            <div class="internship-img">
+                <a href="document/100174.pdf" target="_blank"><img src="document/blog-3.jpg" alt=""></a>
+            </div>
+            <div class="internship-img">
+                <a href="document/Parthkumar Pravinkumar Tandel.pdf" target="_blank"><img src="document/blog-4.jpg"
+                        alt=""></a>
+            </div>
+
+        </div>
+    </section>
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h2>Contact</h2>
+            <span>Connect With Us</span>
+        </div>
+        <div class="contact-form">
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <input type="text" id="name" placeholder="Your Name">
+                <input type="email" id="email" placeholder="Your Email">
+                <textarea id="message" cols="30" rows="10" placeholder="Write Message Here..."></textarea>
+                <input type="submit" value="Send" class="contact-button">
+            </form>
+        </div>
+    </section>
+
+    <!-- Link To JS -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <Script>
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "2002015716@adit.ac.in",
+                Password: "Parth@3008",
+                To: 'tandelparth007@gmail.com',
+                From: document.getElementById("email").value,
+                Subject: "New contect from Enquiry",
+                Body: "Name: " + document.getElementById("name").value
+                    + "<br> Email:" + document.getElementById("email").value
+                    + "<br> message:" + document.getElementById("message").value
+            }).then(
+                message => alert("Message send Successfully")
+            );
+        }
+    </Script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
