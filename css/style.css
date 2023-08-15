@@ -63,11 +63,13 @@ body {
 .logo {
   width: 10rem;
 }
-.main-logo{
+
+.main-logo {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
+
 .main-nav.active {
   font-size: 1rem;
   padding: 10px 20px;
@@ -130,7 +132,7 @@ body {
   transition: color 0.15s ease-in;
 }
 
-.main-nav{
+.main-nav {
   display: flex;
   justify-content: flex-end;
 }
@@ -331,7 +333,7 @@ span {
   left: 0;
   width: 100%;
   height: 0.5rem;
-  background: hsla(260, 100%, 44%, 0.4);
+  background: #ffffff;
   border-radius: 0.5rem;
 }
 
@@ -379,6 +381,7 @@ span {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background: rgb(100, 204, 246);
   border-radius: 0.5rem;
   border-bottom: 2px solid var(--main-color);
   box-shadow: 0 2px 7px rgb(14 55 54 / 15%);
@@ -401,7 +404,7 @@ span {
 .services-box .bx {
   padding-top: 2rem;
   font-size: 54px;
-  color: var(--main-color);
+  color: #06af36;
 }
 
 .services-box:hover .bx {
@@ -409,7 +412,7 @@ span {
 }
 
 .services-box a {
-  color: var(--main-color);
+  color: #92f9af;
   font-size: var(--p-font);
   font-weight: 500;
 }
@@ -434,6 +437,85 @@ span {
   width: 100%;
   height: 100%;
   display: block;
+}
+
+.project-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.project-img {
+  overflow: hidden;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border: 8px solid #ffffff;
+}
+
+.project-page {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background-color: #1f3d4738;
+  backdrop-filter: blur(7px);
+  color: #ede7df;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 1.5s;
+}
+
+.project-img:hover .card-body {
+  right: 0;
+}
+
+.card-title {
+  text-transform: uppercase;
+  font-size: 3vw;
+  font-weight: 500;
+}
+
+.card-sub-title {
+  text-transform: capitalize;
+  font-size: 0.8vw;
+  font-weight: 300;
+}
+
+.card-info {
+  font-size: 1vw;
+  line-height: 20px;
+  margin: 40px 0;
+  font-weight: 400;
+}
+
+.card-btn {
+  color: #1f3d47;
+  background-color: #8fabba;
+  padding: 10px 20px;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.card-btn:hover {
+  background-color: #c8e5ff;
 }
 
 .internship-img img:hover {
@@ -500,15 +582,51 @@ form textarea {
     padding: 50px 4%;
   }
 
-  .logo{
+  .logo {
     display: none;
   }
 }
 
-@media (max-width: 881px) {
-  :root {
-    --big-font: 2.7rem;
-    --medium-font: 1.4rem;
+@media (max-width: 1090px) and (min-width: 991px) {
+  .card-title {
+    text-transform: uppercase;
+    font-size: 3.8vh;
+    font-weight: 500;
+  }
+
+  .card-sub-title {
+    text-transform: capitalize;
+    font-size: 1vh;
+    font-weight: 300;
+  }
+
+  .card-info {
+    font-size: 1.5vh;
+    line-height: 20px;
+    margin: 40px 0;
+    font-weight: 400;
+  }
+}
+
+
+@media (max-width: 947px) and (min-width: 781px) {
+  .card-title {
+    text-transform: uppercase;
+    font-size: 3.8vh;
+    font-weight: 500;
+  }
+
+  .card-sub-title {
+    text-transform: capitalize;
+    font-size: 1vh;
+    font-weight: 300;
+  }
+
+  .card-info {
+    font-size: 1.2vh;
+    line-height: 20px;
+    margin: 40px 0;
+    font-weight: 400;
   }
 }
 
@@ -542,17 +660,22 @@ form textarea {
     flex-direction: column;
     background-color: #fff;
     transition: 0.2s ease;
-    text-align: center;
+    text-align: left;
     height: 180px;
     width: 90%;
-    padding: 50px 0 0 0;
+    padding: 5px 0 0 0;
     border-radius: 20px;
   }
-  .main-nav{
+
+  .main-nav {
     display: flex;
     flex-direction: column;
     background-color: #fff;
     border-radius: 20px;
+  }
+
+  .tab {
+    margin-left: 20px;
   }
 
   .tabs.active {
@@ -560,9 +683,11 @@ form textarea {
   }
 
   .tabs .main-nav a {
-    padding: 0.3rem;
-    display: block;
-    /* background-color: #fff; */
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 100%;
   }
 
   .glider {
@@ -574,7 +699,7 @@ form textarea {
     display: flex;
     height: 54px;
     width: 100px;
-    padding-top: 0rem;
+    padding-top: 1rem;
   }
 
   #darkmode {
@@ -624,6 +749,55 @@ form textarea {
     padding-top: 2rem;
     display: flex;
     justify-content: center;
+  }
+
+  .card-body {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background-color: #1f3d4738;
+    backdrop-filter: blur(5px);
+    color: #ede7df;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1.5s;
+  }
+
+  .card-title {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 500;
+  }
+
+  .card-sub-title {
+    text-transform: capitalize;
+    font-size: 10px;
+    font-weight: 300;
+  }
+
+  .card-info {
+    font-size: 12px;
+    line-height: 25px;
+    margin: 15px 0;
+    font-weight: 400;
+  }
+
+  .card-btn {
+    color: #1f3d47;
+    background-color: #8fabba;
+    height: 100%;
+    width: 100%;
+    padding: 5px 15px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
   }
 
   .contact-form form {

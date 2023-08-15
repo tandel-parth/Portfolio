@@ -5,28 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive internship Website</title>
+    <title>Parth Tandel</title>
     <link rel="icon" href="document/123.png" type="image/icon type">
     <!-- Link To CSS -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- Box Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    
+
 </head>
 
 <body>
     <!-- Navbar -->
-        <div class="container">
+    <div class="container">
         <div class="bx bx-menu" id="menu-icon"></div>
         <div class="tabs">
             <div class="main-logo">
-                <img class="logo" src="document/logo.gif" alt=" GIF">
+                <a href="#home"><img class="logo" src="document/logo.gif" alt=" GIF"></a>
             </div>
             <div class="main-nav">
-                <a href="#home" class="tab" onclick="moveGlider(6)">Home</a>
-                <a href="#about" class="tab" onclick="moveGlider(5)">About</a>
-                <a href="#skills" class="tab" onclick="moveGlider(4)">Skills</a>
-                <a href="#services" class="tab" onclick="moveGlider(3)">Services</a>
+                <a href="#home" class="tab" onclick="moveGlider(7)">Home</a>
+                <a href="#about" class="tab" onclick="moveGlider(6)">About</a>
+                <a href="#skills" class="tab" onclick="moveGlider(5)">Skills</a>
+                <a href="#services" class="tab" onclick="moveGlider(4)">Services</a>
+                <a href="#project" class="tab" onclick="moveGlider(3)">Projects</a>
                 <a href="#internship" class="tab" onclick="moveGlider(2)">Internship</a>
                 <a href="#contact" class="tab" onclick="moveGlider(1)">Contact</a>
                 <div class="bx bx-moon dark" id="darkmode" onclick="mode()"></div>
@@ -43,7 +44,7 @@
             glider.style.transform = `translateX(${index * tabWidth}px)`;
         }
     </script>
-    
+
     <!-- Home -->
 
     <section class="home" id="home">
@@ -57,15 +58,16 @@
             <p>I specialize in front-end development and <br> I hail from Navsari.</p>
             <div class="social">
                 <div class="social-logo ">
-                    <a href="https://www.facebook.com/parth.tandel.5074" target="_blank"><i
-                            class='bx bxl-facebook'></i></a>
-                    <a href="https://twitter.com/TandelParth15" target="_blank"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://github.com/tandel-parth" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/tandel-parth/" target="_blank"><i
+                            class="bx bxl-linkedin"></i></a>
                     <a href="https://www.instagram.com/_parth_3579/" target="_blank"><i
                             class='bx bxl-instagram'></i></a>
-                    <a href="https://github.com/tandel-parth" target="_blank"><i class='bx bxl-github'></i></a>
-                    <a href="https://linkedin.com/in/tandel-parth" target="_blank"><i class="bx bxl-linkedin"></i></a>
+                    <a href="https://twitter.com/TandelParth15" target="_blank"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://www.facebook.com/parth.tandel.5074" target="_blank"><i
+                            class='bx bxl-facebook'></i></a>
                 </div>
-                <a href="#contact" class="btn">Contact Me</a>
+                <a href="#contact" class="btn">Connect with me</a>
             </div>
         </div>
 
@@ -111,7 +113,7 @@
     <section class="skills" id="skills">
         <div class="heading">
             <h2>Skills</h2>
-            <span>My Skills</span>
+            <span>Skills I achieved</span>
         </div>
         <!-- Skills Content -->
         <div class="skills-container">
@@ -186,23 +188,81 @@
 
         </div>
     </section>
+    <!-- Projects -->
+    <section class="project" id="project">
+        <div class="heading">
+            <h2>Projects</h2>
+            <span>My Recent Work</span>
+        </div>
+        <div class="project-content">
+            <div class="project-img">
+                <img src="document/project-1.png" class="project-page" alt="">
+                <div class="card-body">
+                    <h1 class="card-title">TATVASOFT Pvt. Ltd.</h1>
+                    <p class="card-sub-title">ReactJS INTERN : BOOK STORE PROJECT</p>
+                    <p class="card-info">
+                        Developed this application using ReactJs. This projectis about an online bookstore using APIto
+                        validate the user and allow the
+                        userto add/delete books fromthe cart and proceed to place the book. <br>
+                        <b>Technology Stack:</b>ReactJS, Toastify, Axious, Formik, Material ui
+                    </p>
+                    <a href="https://github.com/tandel-parth/TatvaSoft-Internship-" target="_blank"><button
+                            class="card-btn">Learn more</button></a>
+                </div>
+            </div>
+            <div class="project-img">
+                <img src="document/project-2.png" class="project-page" alt="">
+                <div class="card-body">
+                    <h1 class="card-title">IDEALab</h1>
+                    <p class="card-sub-title">IDEALab Event Management System</p>
+                    <p class="card-info">
+                        The Systemis working on the web platformto collect allthe data of differentIDEALab working
+                        around India tomanage the
+                        database of allthe events and allthe participants which are of it. It also provides Automatic
+                        data entry forregistration process
+                        and hencemake it easy forthe coordinators.<br>
+                        <b>Technology Stack:</b>HTML, CSS, JavaScript, PHP, MySQL
+                    </p>
+                    <a href="https://github.com/tandel-parth/IDALab-Event-Management-Systrm" target="_blank"><button
+                            class="card-btn">Learn more</button></a>
+                </div>
+            </div>
+            <div class="project-img">
+                <img src="document/project-3.png" class="project-page" alt="">
+                <div class="card-body">
+                    <h1 class="card-title">SSIP Hackathon</h1>
+                    <p class="card-sub-title">Jan Suvidha Portal(SSIP Hackathon)</p>
+                    <p class="card-info">
+                        Jan Suvidha portal projectis used by both citizen andGovernment. Citizen wantto know about
+                        various documentrequired
+                        and procedure fortaking benefits of schemes offered by government.
+                        <br>
+                        <b>Technology Stack:</b>HTML, CSS, JavaScript, PHP, MySQL
+                    </p>
+                    <a href="https://github.com/tandel-parth/Jan-Suvidha-Portal" target="_blank"><button
+                            class="card-btn">Learn more</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- internship -->
     <section class="internship" id="internship">
         <div class="heading">
             <h2>Internship</h2>
-            <span>Our Recent Work</span>
+            <span>My Recent Work</span>
         </div>
         <div class="internship-content">
             <div class="internship-img">
-                <a href="document/ADIT-ALL-111-Parthkumar Pravinkumar Tandelpdf.pdf" target="_blank"><img
-                        src="document/blog-2.jpg" alt=""></a>
-            </div>
-            <div class="internship-img">
-                <a href="document/100174.pdf" target="_blank"><img src="document/blog-3.jpg" alt=""></a>
-            </div>
-            <div class="internship-img">
-                <a href="document/Parthkumar Pravinkumar Tandel.pdf" target="_blank"><img src="document/blog-4.jpg"
+                <a href="document/tatvasoft_intership-parth_tandel.pdf" target="_blank"><img src="document/blog-1.png"
                         alt=""></a>
+            </div>
+            <div class="internship-img">
+                <a href="document/PHN_intership-parth_tandel.pdf" target="_blank"><img src="document/blog-3.png"
+                        alt=""></a>
+            </div>
+            <div class="internship-img">
+                <a href="document/learnsmesher_intership-parth_tandel.pdf.pdf" target="_blank"><img
+                        src="document/blog-4.png" alt=""></a>
             </div>
 
         </div>
@@ -211,7 +271,7 @@
     <section class="contact" id="contact">
         <div class="heading">
             <h2>Contact</h2>
-            <span>Connect With Us</span>
+            <span>Connect With Me</span>
         </div>
         <div class="contact-form">
             <form onsubmit="sendEmail(); reset(); return false;">
